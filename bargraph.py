@@ -65,6 +65,8 @@ class Bargraph:
         if formatSeconds==True:
             for i in range(9):
                 outDic["labels"][i] = secToFormat(outDic["labels"][i])
+        #font object
+        outDic["font"]= pygame.font.SysFont("Arial",verticalDisplaySize)
         return outDic
         #end
     
@@ -88,7 +90,20 @@ class Bargraph:
         #vertical label values.
         if style==0:
             for i in dic["bars"]:
-                simpleText(20,dic["bars"][i][2],"black",(dic["lines"]["vertical"][i+1][0][0]-dic["txtSpace"]/2,dic["lines"]["vertical"][len(dic["bars"])-i-1][1][1]))
+                simpleText(dic["font"],dic["bars"][i][2],"black",(dic["lines"]["vertical"][i+1][0][0]-dic["txtSpace"]/2,dic["lines"]["vertical"][len(dic["bars"])-i-1][1][1]))
         #bars
         for i in dic["bars"]:
             pygame.draw.rect(screen,"blue",(dic["bars"][i][4][0],dic["bars"][i][4][1],dic["bars"][i][5][0],dic["bars"][i][5][1]))
+        
+    
+    
+    #updates x,y axis give an amount in pixels
+    def bargraph_move(dic,y=0,x=0):
+        if x != 0 or y!=0:
+            dic["background"] = (dic["background"][0][0]+x,dic["background"][0][1]+y),(dic["background"][1][0],dic["background"][1][1])
+            for i in dic["bars"]:
+                dic["bars"][i][4] = (dic["bars"][i][4][0]+x,dic["bars"][i][4][1]+y)
+            for axis in dic["lines"]:
+                for i in dic["lines"][axis]:
+                    dic["lines"][axis][i] = (dic["lines"][axis][i][0][0]+x,dic["lines"][axis][i][0][1]+y),(dic["lines"][axis][i][1][0]+x,dic["lines"][axis][i][1][1]+y)
+        return dic
