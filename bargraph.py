@@ -143,7 +143,7 @@ class Bargraph:
         
     
     
-    #updates x,y axis give an amount in pixels
+    #updates x,y axis given an amount in pixels
     def move(dic,y=0,x=0):
         if x != 0 or y!=0:
             dic["background"] = (dic["background"][0][0]+x,dic["background"][0][1]+y),(dic["background"][1][0],dic["background"][1][1])
