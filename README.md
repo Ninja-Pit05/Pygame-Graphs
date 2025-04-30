@@ -80,4 +80,25 @@ calc(
 
 ***amountHorLines*** - Amount of vertical division lines on the y coordinate.
 
+#### code example:
+
+```python
+import pygame
+from PygameGraph import Bargraph
+
+pygame.init()
+screen=pygame.display.set_mode(1200,700)
+
+
+data=[1,2,77,4,1,31,12]
+graph=Bargraph.calc((100,100),(1000,500),data)
+
+while True:
+    screen.fill('white')
+
+    Bargraph.draw(graph)
+
+    pygame.display.flip()
+---
+
 ### draw
