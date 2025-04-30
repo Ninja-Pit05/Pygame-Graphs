@@ -26,7 +26,7 @@ import method:
 from PygameGraph import Bargraph
 ```
 
-The Bargraph class comes witg Three functions:
+The Bargraph class comes with three functions:
 
 > calc
 
@@ -34,11 +34,12 @@ Calculates the graphs contents position.
 
 > draw
 
-Draws the graph
+Draws the graph.
 
 > move
 
 Easly changes graph coordinates.
+
 
 ### calc
 
@@ -60,7 +61,9 @@ calc(
 ```
 
 ***cords*** - Coordinates of the position of the graph on the screen. Either a tuple (x,y) or a list [x,y].
-***size*** - Width and Height of the graph. Either a tuple (w,h) or a list [x,y]
+
+***size*** - Width and Height of the graph. Either a tuple (w,h) or a list [x,y].
+
 ***verticalValue*** - Numeric value of each piece of data. Is also the internal value used to calculates each bar height, width, etc. For said reason, if your data is formatted, for instance, 30:23:12:0.34, it should be tranlated to an int value, let's say, seconds or hours.
 
 ***verticalOverlayFunction*** - Receives a function used to format the numerical data. Let's say, turning the 360 seconds internally, into """"""
