@@ -27,11 +27,11 @@ from PygameGraph import Bargraph
 ```
 
 The Bargraph class comes witg Three functions:
-*calc*
+**calc**
 Calculates the graphs contents position.
-*draw*
+**draw**
 Draws the graph
-*move*
+**move**
 Easly changes graph coordinates.
 
 ### calc
@@ -53,15 +53,22 @@ calc(
 )
 ```
 
-cords Coordinates of the position of the graph on the screen. Either a tuple (x,y) or a list [x,y].
-size Width and Height of the graph. Either a tuple (w,h) or a list [x,y]
-verticalValue numeric value of each piece of data. Is also the internal value used to calculates each bar height, width, etc. For said reason, if your data is formatted, for instance, 30:23:12:0.34, it should be tranlated to an int value, let's say, seconds or hours.
+> cords Coordinates of the position of the graph on the screen. Either a tuple (x,y) or a list [x,y].
+> size Width and Height of the graph. Either a tuple (w,h) or a list [x,y]
+**verticalValue** numeric value of each piece of data. Is also the internal value used to calculates each bar height, width, etc. For said reason, if your data is formatted, for instance, 30:23:12:0.34, it should be tranlated to an int value, let's say, seconds or hours.
+
 verticalOverlayFunction Receives a function used to format the numerical data. Let's say, turning the 360 seconds internally, into """"""
+
 fontSize The font size for labels. Either an integer or a tuple/list of two integers. If an integer is passed, both, vertical and horizontal labels, will have the passed value. If a tuple/list of two integers are passed, the first value will be the vertical label font size and the second value the horizontal label font size.
+
 border The border of the graph, centering it's content.
+
 horPointy The continuation of the horizontal lines before y 0.
+
 verPointy The continuation of the horizontal lines before x 0.
+
 formatSeconds (Discontinued, will disappear soon)
+
 amountHorLines Amount of vertical division lines on the y coordinate.
 
 ### draw
