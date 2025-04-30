@@ -28,16 +28,13 @@ from PygameGraph import Bargraph
 
 The Bargraph class comes witg Three functions:
 
-**calc**
-
+> calc
 Calculates the graphs contents position.
 
-**draw**
-
+> draw
 Draws the graph
 
-**move**
-
+> move
 Easly changes graph coordinates.
 
 ### calc
