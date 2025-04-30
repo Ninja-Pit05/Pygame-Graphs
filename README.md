@@ -103,5 +103,21 @@ while True:
 ---
 
 ### draw
+Draws the graph to specified pygame.dislay pbject.
 
-###Work in progress, more documentation soon.
+```python
+draw(
+    screen,
+    dic,
+    outline=5,
+    style=0
+)
+```
+
+***screen*** - Pygame.font object to draw graph on.
+
+***dic*** - Python dictionary object which received the Bargraph.calc result.
+
+***outline*** - Graph outline thickness
+
+***style*** - (Discontinued, being deleted soon) Hide/show labels.
