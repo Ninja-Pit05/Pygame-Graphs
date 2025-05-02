@@ -124,7 +124,7 @@ draw(
 
 ---
 
-###move
+### move
 Moves the graph coordinates given an value in pixels for both axis.
 
 ```python
