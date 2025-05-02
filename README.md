@@ -1,5 +1,5 @@
 # Pygame-Graphs
-A project to designed to draw graphs on pygame in an easy and fast way. A hobby project made for fun.
+A project designed to draw graphs on pygame in an easy and fast way. A hobby project made for fun.
 
 ### How to use it
 So far you'll need to download PygameGraph.py and install it manually. I'll add a way to `pip install` it later.
@@ -121,3 +121,20 @@ draw(
 ***outline*** - Graph outline thickness
 
 ***style*** - (Discontinued, being deleted soon) Hide/show labels.
+
+---
+
+###move
+Moves the graph coordinates given an value in pixels for both axis.
+
+```python
+move(
+    dic,
+    x,
+    y
+)
+```
+
+***dic*** - Python dictionary object which received the Bargraph.calc result.
+***x*** - Number in pixels to move in the x axis.
+***y*** - Number in pixels to move in the y axis.
