@@ -1,1 +1,1 @@
-import pygameGraph
+from pygameGraph import pygameGraph
