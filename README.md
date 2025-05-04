@@ -5,7 +5,7 @@ A project designed to draw graphs on pygame in an easy and fast way. A hobby pro
 
 For installing use this for now:
 ```python
-https://github.com/Ninja-Pit05/Pygame-Graphs/archive/refs/tags/v0.0.11.zip
+pip install https://github.com/Ninja-Pit05/Pygame-Graphs/archive/refs/tags/v0.0.11.zip
 ```
 
 To import it, use:
