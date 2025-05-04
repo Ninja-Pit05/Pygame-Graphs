@@ -2,7 +2,11 @@
 A project designed to draw graphs on pygame in an easy and fast way. A hobby project made for fun.
 
 ### How to use it
-So far you'll need to download PygameGraph.py and install it manually. I'll add a way to `pip install` it later.
+
+For installing use this for now:
+```python
+pip install https://github.com/Ninja-Pit05/Pygame-Graphs.git
+```
 
 To import it, use:
 ```python
