@@ -19,35 +19,40 @@ from PygameGraphs import "Graph Name"
 
 So far, the graphs available are:
 - Bargraph
-
+- Linegraph
 ---
 
-## Bargraph
-Displays data with bars.
+## import methods:
 
-import method:
 ```python
 from PygameGraph import Bargraph
+from PygameGraph import Linegraph
 ```
 
 #### code example:
 
 ```python
-import pygame
 from PygameGraph import Bargraph
+from PygameGraph import Linegraph
+import pygame
 
-pygame.init()
-screen=pygame.display.set_mode((1200,700))
+pygame.init
+
+screen = pygame.display.set_mode()
 
 
-data=[1,2,7,4,1,3,12]
-graph=Bargraph.calc((100,100),(1000,500),data)
+graph=Linegraph.calc((50,50),(1000,500),[7,8,9,1,2,4,8,6,5,3,1,0,8,7,6,5,4,8,12],None,None,20,amountHorLines=9)
+graph1=Bargraph.calc((50,600),(1000,500),[7,8,9,1,2,4,8,6,5,3,1,0,8,7,6,5,4,8,12],None,None,20,amountHorLines=9)
+
+print(graph)
 
 while True:
-    screen.fill('white')
-
-    Bargraph.draw(screen,graph)
-
+    screen.fill("white")
+    
+    #Bargraph.draw(screen,graph)
+    #Bargraph.move(graph,1,1)
+    Linegraph.draw(screen,graph)
+    Bargraph.draw(screen,graph1)
     pygame.display.flip()
 ```
 
